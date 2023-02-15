@@ -188,6 +188,9 @@ with c2:
 with c3:
     uicnr = st.selectbox('Wagennummer',uic[COLUMN_UIC].dropna().astype(str))
 
+
+st.markdown('Die Prognosen im Fahrverlauf bauen auf einander auf. Wählen Sie eine Belegung am ersten Halt um die Prognosen für den weiteren Fahrtverlauf zu beeinflussen.')
+
 selected_trip = fpl_string.loc[fpl_string['Fahrtinfo']==dropdown_train_number,COLUMN_TRIP_NUMBER].iloc[0]
 
 
