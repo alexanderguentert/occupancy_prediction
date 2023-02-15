@@ -167,6 +167,10 @@ def load_data():
 
 
 ################### App
+st.set_page_config(
+	page_title='ETC Belegungsprognosen',
+	page_icon='https://etc-solutions.de/wp-content/uploads/2020/12/cropped-Logo-Webseite-neu-32x32.png')
+
 image = Image.open('data/etc_logo.png')
 st.image(image)
 
